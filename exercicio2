@@ -1,5 +1,7 @@
 def fatorial(n):
+    # Caso base: se n for igual a 0, o fatorial é 1
     if n == 0:
         return 1
     else:
+        # Caso recursivo: o fatorial de n é n multiplicado pelo fatorial de n-1
         return n * fatorial(n-1)
