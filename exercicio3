@@ -1,9 +1,19 @@
 def contar_ocorrencias_palavras(texto):
+    # Converte o texto para minúsculas e o divide em palavras
     palavras = texto.lower().split()
+    
+    # Cria um dicionário para armazenar as ocorrências de cada palavra
     ocorrencias = {}
+    
+    # Itera sobre cada palavra no texto
     for palavra in palavras:
+        # Verifica se a palavra já está no dicionário de ocorrências
         if palavra in ocorrencias:
+            # Se a palavra já existe, incrementa o contador de ocorrências
             ocorrencias[palavra] += 1
         else:
+            # Se a palavra ainda não existe, adiciona ao dicionário com contagem 1
             ocorrencias[palavra] = 1
+    
+    # Retorna o dicionário com as ocorrências de cada palavra
     return ocorrencias
