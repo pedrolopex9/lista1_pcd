@@ -1,0 +1,12 @@
+def contar_elementos(vetor):
+    # Conta o número de elementos positivos no vetor
+    positivos = len([x for x in vetor if x > 0])
+    
+    # Conta o número de elementos negativos no vetor
+    negativos = len([x for x in vetor if x < 0])
+    
+    # Conta o número de zeros no vetor
+    zeros = len([x for x in vetor if x == 0])
+    
+    # Retorna uma tupla contendo o número de positivos, negativos e zeros
+    return positivos, negativos, zeros
